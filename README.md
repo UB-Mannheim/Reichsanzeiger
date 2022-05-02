@@ -10,3 +10,5 @@ is prepared by [Mannheim University Library](https://www.bib.uni-mannheim.de/en/
 
 See also the [Reichsanzeiger wiki](https://github.com/UB-Mannheim/Reichsanzeiger/wiki)
 for additional information.
+
+### [Info für Coding da Vinci Baden-Württemberg 2022 (German)](https://github.com/UB-Mannheim/Reichsanzeiger/wiki/Coding-da-Vinci-Baden-W%C3%BCrttemberg-2022)
