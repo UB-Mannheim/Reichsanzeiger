@@ -1,0 +1,50 @@
+#!/bin/sh
+
+# 2023 Stefan Weil, Bernd Fallert (Universitätsbibliothek Mannheim)
+
+# Prüfe METS-Dateien auf Gültigkeit.
+
+# Dabei wird automatisch zwischen Zeitungen und anderen Medien unterschieden,
+# da die Deutsche Digitale Bibliothek dafür unterschiedliche Regeln hat.
+
+# Aufruf:
+# validate-mets [--script] [METSFILE [...]]
+
+set -e
+
+BASE=$(dirname $0)
+
+if test "$1" = "--script"; then
+  outputformat='script'
+  shift
+fi
+
+while true; do
+  metsfile=$1
+  test -z "$metsfile" && break
+
+  # xmllint --noout --schema http://www.loc.gov/standards/mets/mets.xsd $metsfile
+  xmllint --noout --schema $BASE/mets.xsd $metsfile
+
+  if grep -q 'mods:detail.*type=.issue' $metsfile ; then
+    # Zeitungen
+    if [ "${outputformat}" = "script" ]; then
+      java -jar $BASE/SaxonHE/saxon-he-12.3.jar -xsl:$BASE/ddb_validierung_mets-mods-ap-digitalisierte-zeitungen.xsl $metsfile
+    else
+      # Textual report.
+      java -jar $BASE/SaxonHE/saxon-he-12.3.jar -xsl:$BASE/ddb_validierung_mets-mods-ap-digitalisierte-zeitungen.xsl $metsfile | \
+      xsltproc $BASE/format-svrl-output-to-text.xsl -
+    fi
+  else
+    # Bücher etc.
+    if [ "${outputformat}" = "script" ]; then
+      java -jar $BASE/SaxonHE/saxon-he-12.3.jar -xsl:$BASE/ddb_validierung_mets-mods-ap-digitalisierte-medien.xsl $metsfile
+    else
+      # Textual report.
+      java -jar $BASE/SaxonHE/saxon-he-12.3.jar -xsl:$BASE/ddb_validierung_mets-mods-ap-digitalisierte-medien.xsl $metsfile | \
+      xsltproc $BASE/format-svrl-output-to-text.xsl -
+    fi
+  fi
+
+  shift
+done
