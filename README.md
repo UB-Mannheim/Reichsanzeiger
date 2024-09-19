@@ -23,4 +23,4 @@ Gefördert durch die Deutsche Forschungsgemeinschaft (DFG) – [422758594](https
 
 * https://digi.bib.uni-mannheim.de/periodika/reichsanzeiger/ – digital edition
 * https://digi.bib.uni-mannheim.de/fess – fulltext search
-* https://digi.bib.uni-mannheim.de/periodika/zeitungen/zeitungenlistenansicht/ – new digital edition (currently only for 1919–1945)
+* https://digi.bib.uni-mannheim.de/periodika/zeitungen/zeitungenlistenansicht/ – new digital edition
