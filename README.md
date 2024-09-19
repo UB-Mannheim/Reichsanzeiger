@@ -11,9 +11,13 @@ is prepared by [Mannheim University Library](https://www.bib.uni-mannheim.de/en/
 See also the [Reichsanzeiger wiki](https://github.com/UB-Mannheim/Reichsanzeiger/wiki)
 for additional information.
 
+[![Gefördert durch die Deutsche Forschungsgemeinschaft](https://www2.bib.uni-mannheim.de/dfg_logo_schriftzug_blau_foerderung_klein.jpg)](https://www.dfg.de/)<br>
+Funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) – [422758594](https://gepris.dfg.de/gepris/projekt/422758594?language=en) (2019–2024)<br>
+Gefördert durch die Deutsche Forschungsgemeinschaft (DFG) – [422758594](https://gepris.dfg.de/gepris/projekt/422758594?language=de) (2019–2024)
+
 ## List of files
 
-* reichsanzeiger.sql – MariaDB SQL database which maps microfilm images to Reichsanzeiger issues
+* [reichsanzeiger.sql](https://github.com/UB-Mannheim/Reichsanzeiger/blob/main/reichsanzeiger.sql) – MariaDB SQL database which maps microfilm images to Reichsanzeiger issues
 
 ## URLs
 
