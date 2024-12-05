@@ -2,6 +2,7 @@
 
 ### Installation
 
+* Install required packages. For Debian: run `sudo apt install default-jre-headless libxml2-utils xsltproc`.
 * Copy the whole directory to your local filesystem.
 * Run `install.sh` to get additional required files.
 
