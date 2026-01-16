@@ -24,3 +24,7 @@ Gefördert durch die Deutsche Forschungsgemeinschaft (DFG) – [422758594](https
 * https://digi.bib.uni-mannheim.de/periodika/reichsanzeiger/ – digital edition
 * https://digi.bib.uni-mannheim.de/fess – fulltext search
 * https://digi.bib.uni-mannheim.de/periodika/zeitungen/zeitungenlistenansicht/ – new digital edition
+
+## Other software used within the project
+
+* https://github.com/UB-Mannheim/validate-mets - validate METS files
