@@ -27,4 +27,5 @@ Gefördert durch die Deutsche Forschungsgemeinschaft (DFG) – [422758594](https
 
 ## Other software used within the project
 
+* https://github.com/UB-Mannheim/ra-scripts - collection of convenience scripts
 * https://github.com/UB-Mannheim/validate-mets - validate METS files
